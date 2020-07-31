@@ -33,7 +33,7 @@ namespace AWSFirstTry.Func
         {
             string url = String.Format("https://cl0xbpvfk6.execute-api.ap-southeast-1.amazonaws.com/test/helloworld");
             WebRequest requestObject = WebRequest.Create(url);
-            requestObject.Method = "GET";
+            requestObject.Method = "POST";
             HttpWebResponse responseObjGet = null;
             responseObjGet = (HttpWebResponse)requestObject.GetResponse();
 
