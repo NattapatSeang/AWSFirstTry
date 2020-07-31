@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AWSFirstTry.Models;
+using AWSFirstTry.Func;
 
 namespace AWSFirstTry.Controllers
 {
@@ -20,6 +21,7 @@ namespace AWSFirstTry.Controllers
 
         public IActionResult Index()
         {
+            Func.Test.GET_Method();
             return View();
         }
 
